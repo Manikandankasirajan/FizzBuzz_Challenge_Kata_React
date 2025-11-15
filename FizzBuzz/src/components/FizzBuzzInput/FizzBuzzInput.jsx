@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
+import fizzBuzz from "../../utils/fizzBuzz";
 
-const FizzBuzzInput = () => {
+const FizzBuzzInput = ({ setOutput }) => {
+	const [input, setInput] = useState();
 	return (
 		<>
 			<label htmlFor="inputBox"></label>
@@ -9,8 +12,9 @@ const FizzBuzzInput = () => {
 				name="input"
 				id="inputBox"
 				placeholder="Enter your number"
+				onChange={(e) => setInput(e.target.value)}
 			/>
-			<button>Check</button>
+			<button onClick={() => setOutput(fizzBuzz(input))}>Check</button>
 		</>
 	);
 };
