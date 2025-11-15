@@ -1,7 +1,12 @@
 import React from "react";
+import FizzBuzz from "./pages/FizzBuzz/FizzBuzz";
 
 const App = () => {
-	return <div>App</div>;
+	return (
+		<>
+			<FizzBuzz />
+		</>
+	);
 };
 
 export default App;
