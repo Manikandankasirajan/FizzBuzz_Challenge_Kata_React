@@ -1,7 +1,7 @@
-function App() {
-	const [count, setCount] = useState(0);
+import React from "react";
 
-	return <>App</>;
-}
+const App = () => {
+	return <div>App</div>;
+};
 
 export default App;
