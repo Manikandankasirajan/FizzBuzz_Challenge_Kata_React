@@ -6,4 +6,8 @@ describe("test cases for fizzbuzz function", () => {
 		const input = 2;
 		expect(fizzBuzz(input)).toBe(2);
 	});
+	it("should return fizz when the input is multiple of 3", () => {
+		const input = 3;
+		expect(fizzBuzz(input)).toBe('Fizz');
+	});
 });
