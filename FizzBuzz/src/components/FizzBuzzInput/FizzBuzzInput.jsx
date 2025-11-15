@@ -13,6 +13,7 @@ const FizzBuzzInput = ({ setOutput }) => {
 				id="inputBox"
 				placeholder="Enter your number"
 				onChange={(e) => setInput(e.target.value)}
+				min={0}
 			/>
 			<button onClick={() => setOutput(fizzBuzz(input))}>Check</button>
 		</>

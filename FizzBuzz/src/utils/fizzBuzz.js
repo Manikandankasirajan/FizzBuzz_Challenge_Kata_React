@@ -1,4 +1,7 @@
 export default function fizzBuzz(input) {
+	if (!input) {
+		alert("Please enter no and try again");
+	}
 	const rules = [defaultRule, fizzRule, buzzRule, FizzBuzzRule];
 	for (const rule of rules) {
 		const result = rule(input);
