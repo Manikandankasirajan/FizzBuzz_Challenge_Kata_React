@@ -1,5 +1,5 @@
 export default function fizzBuzz(input) {
-	const rules = [defaultRule, fizzRule];
+	const rules = [defaultRule, fizzRule, buzzRule];
 	for (const rule of rules) {
 		const result = rule(input);
 		if (result) {
@@ -13,4 +13,7 @@ function defaultRule(input) {
 }
 function fizzRule(input) {
 	return input % 3 === 0 && input % 5 !== 0 && "Fizz";
+}
+function buzzRule(input) {
+	return input % 3 !== 0 && input % 5 === 0 && "Buzz";
 }
